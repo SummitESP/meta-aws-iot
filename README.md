@@ -6,9 +6,9 @@ git clone https://github.com/AntonHakansson/meta-aws-iot.git
 ```
 
 Add the layer to your bblayers.conf
-'''
+```
 BBLAYERS += "/path/to/meta-aws-iot"
-'''
+```
 
 Add recipes to your local.conf.
 ```
