@@ -5,6 +5,8 @@ Clone repository to your layers directory.
 git clone https://github.com/AntonHakansson/meta-aws-iot.git
 ```
 
+Add the layer to your bblayers.conf
+
 Add recipes to your local.conf.
 ```
 IMAGE_INSTALL_append += " AWSIoTPythonSDK aws-credentials"
@@ -20,7 +22,7 @@ aws-certs.zip
 
 ```
 
-To connect with your ATS Garage account, you’ll need the provisioning credentials bundle you downloaded earlier. Add the following line to your local.conf to supply those credentials to the build:
+To connect with your AWS IoT backend, you’ll need the provisioning credentials bundle you downloaded earlier. Add the following line to your local.conf to supply those credentials to the build:
 ```
 AWS_IOT_CREDENTIALS = "/path/to/your/credentials.zip"
 ```
