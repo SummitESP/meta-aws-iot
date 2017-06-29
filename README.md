@@ -1,3 +1,5 @@
+__Note__ Currently only installs python aws sdk module and adds AWS IoT credentials to __/etc/aws-credentials/__.
+
 ## Quickstart
 
 Clone repository to your layers directory.
@@ -33,4 +35,8 @@ Example(assuming aws-cert.zip is located in the same directory as your local.con
 ```
 AWS_IOT_CREDENTIALS = "${TOPDIR}/conf/aws-certs.zip"
 ```
+
+The build your image using 'bitbake'
+
+The credentials can be located at __/etc/aws-credentials/__ on the image.
 
