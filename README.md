@@ -6,6 +6,9 @@ git clone https://github.com/AntonHakansson/meta-aws-iot.git
 ```
 
 Add the layer to your bblayers.conf
+'''
+BBLAYERS += "/path/to/meta-aws-iot"
+'''
 
 Add recipes to your local.conf.
 ```
@@ -28,6 +31,6 @@ AWS_IOT_CREDENTIALS = "/path/to/your/credentials.zip"
 ```
 Example(assuming aws-cert.zip is located in the same directory as your local.conf):
 ```
-AWS_IOT_CREDENTIALS = "${TOPDIR}/conf/aws-cert.zip"
+AWS_IOT_CREDENTIALS = "${TOPDIR}/conf/aws-certs.zip"
 ```
 
