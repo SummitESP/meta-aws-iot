@@ -36,7 +36,7 @@ Example, assuming `aws-certs.zip` is located in the same directory as your `loca
 AWS_IOT_CREDENTIALS = "${TOPDIR}/conf/aws-certs.zip"
 ```
 
-Then build your image using 'bitbake'
+Then build your image using `bitbake`
 
 The credentials can be located at `/etc/aws-credentials/` on the built image.
 
