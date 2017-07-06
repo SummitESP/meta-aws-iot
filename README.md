@@ -1,4 +1,4 @@
-__Note__ Currently only installs python aws sdk module and adds AWS IoT credentials to __/etc/aws-credentials/__.
+> Note: currently only installs aws sdk python module and adds AWS IoT credentials to `/etc/aws-credentials/`
 
 ## Quickstart
 
@@ -27,16 +27,16 @@ aws-certs.zip
 
 ```
 
-To connect with your AWS IoT backend, you’ll need the provisioning credentials bundle you downloaded earlier. Add the following line to your local.conf to supply those credentials to the build:
+To connect with your AWS IoT backend, you’ll need the provisioning credentials you downloaded earlier. Add the following line to your `local.conf` to supply those credentials to the build:
 ```
 AWS_IOT_CREDENTIALS = "/path/to/your/credentials.zip"
 ```
-Example(assuming aws-cert.zip is located in the same directory as your local.conf):
+Example, assuming `aws-certs.zip` is located in the same directory as your `local.conf`:
 ```
 AWS_IOT_CREDENTIALS = "${TOPDIR}/conf/aws-certs.zip"
 ```
 
-The build your image using 'bitbake'
+Then build your image using 'bitbake'
 
-The credentials can be located at __/etc/aws-credentials/__ on the image.
+The credentials can be located at `/etc/aws-credentials/` on the built image.
 
