@@ -3,17 +3,11 @@ SECTION = "devel/python"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 DEPENDS = "python aws-credentials"
-PACKAGES = "awsiotpythonsdk"
-PROVIDES = "awsiotpythonsdk"
-RPROVIDES = "awsiotpythonsdk"
 
-SRCNAME = "aws-iot-device-sdk-python"
+SRC_URI[md5sum] = "6835982c7fb36b19aa474d346f29ec3d"
+SRC_URI[sha256sum] = "ac98d39d7230e06fc9a30bdb3398c985a7c357b10898a769db022d315855102a"
 
-SRC_URI = "https://github.com/aws/${SRCNAME}/archive/v${PV}.tar.gz"
+PYPI_PACKAGE = "AWSIoTPythonSDK"
 
-SRC_URI[md5sum] = "66008afdd86b55a22a24aa2954787fba"
-SRC_URI[sha256sum] = "d6f067ff61f92676a7688eb1ded5b91da557614f097fcc91fb6066d04760d4ca"
+inherit pypi setuptools
 
-S = "${WORKDIR}/${SRCNAME}-${PV}"
-
-inherit setuptools
