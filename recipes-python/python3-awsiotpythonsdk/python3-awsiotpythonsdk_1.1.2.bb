@@ -9,5 +9,5 @@ SRC_URI[sha256sum] = "ac98d39d7230e06fc9a30bdb3398c985a7c357b10898a769db022d3158
 
 PYPI_PACKAGE = "AWSIoTPythonSDK"
 
-inherit pypi setuptools
+inherit pypi setuptools3
 
