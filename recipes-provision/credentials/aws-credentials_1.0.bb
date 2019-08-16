@@ -1,6 +1,7 @@
 DESCRIPTION = "AWS iot credentials"
 SECTION = "provisioning"
 LICENSE = "MIT"
+PACKAGES = "aws-credentials"
 
 do_install () {
   # If credentials were provided, install to /etc/aws-credentials/
